@@ -1,0 +1,37 @@
+.mr-auto {
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mr-autoFooter {
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.size {
+    width: 100%;
+    height: 800px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.activity {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.infos {
+    max-width: 30%;
+}
+
+.vignette {
+    max-width: 0.5%;
+}
