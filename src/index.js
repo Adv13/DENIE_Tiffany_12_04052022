@@ -1,13 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Header from './Components/Header/header'
+import Footer from './Components/Footer/footer'
+import Error from './Components/Error/error'
+import Profile from './Pages/Profile/profile'
+import Home from './Pages/Home/home'
+import Settings from './Pages/Settings/settings'
+import Community from './Pages/Community/community';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+      <Footer />
+    </Router>
+
   </React.StrictMode>
 );
 
