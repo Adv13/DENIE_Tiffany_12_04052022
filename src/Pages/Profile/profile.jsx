@@ -3,10 +3,10 @@
 
 
 function Profile(){
-    return(<div>
+    return(<section>
         <h1>Bonjour <strong>Thomas</strong></h1>
         <h2>Félicitation ! Vous avez explosé vos objectifs hier 👏</h2>
-        </div>)
+        </section>)
 }
 
 export default Profile;

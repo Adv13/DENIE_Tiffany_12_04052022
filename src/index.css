@@ -2,9 +2,9 @@
 @import './Components/Footer/footer.css';
 @import './Components/Header/header.css';
 @import './Pages/Home/home.css';
-@import './Pages/Profile/profile.css';
 @import './Pages/Settings/settings.css';
 @import './Pages/Community/community.css';
+@import './Pages/Profile/profile.css';
 
 body {
   margin: 0;

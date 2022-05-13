@@ -1,3 +1,11 @@
+h1,
+h2 {
+    text-align: justify;
+    margin-left: 100px;
+    margin-top: 0px;
+    padding-top: 50px;
+}
+
 h1 {
     font-weight: bold;
 }
@@ -8,4 +16,6 @@ strong {
 
 h2 {
     font-weight: lighter;
+    padding-top: 20px;
+    font-size: 1em;
 }
