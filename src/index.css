@@ -4,7 +4,7 @@
 @import './Pages/Home/home.css';
 @import './Pages/Settings/settings.css';
 @import './Pages/Community/community.css';
-@import './Pages/Profile/profile.css';
+@import './Pages/Dashboard/dashboard.css';
 
 body {
   margin: 0;
@@ -22,4 +22,5 @@ code {
 
 a {
   text-decoration: none;
+  color:white
 }
