@@ -19,12 +19,12 @@ function Header() {
             Accueil
           </Link>
         )}
-        {useLocation().pathname === "/profile" ? (
-          <Link className="profileLink active" to="/profile">
+        {useLocation().pathname === "/dashboard" ? (
+          <Link className="dashboardLink active" to="/dashboard">
             Profil
           </Link>
         ) : (
-          <Link className="profileLink" to="/profile">
+          <Link className="dashboardLink" to="/dashboard">
             Profil
           </Link>
         )}

@@ -11,6 +11,8 @@ import Home from './Pages/Home/home'
 import Settings from './Pages/Settings/settings'
 import Community from './Pages/Community/community';
 
+/*"/dashboard/:id" */
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -18,7 +20,7 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/dashboard/:id" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} /> 
         <Route path="/settings" element={<Settings />} />
         <Route path="/community" element={<Community />} />
         <Route path="*" element={<Error />} />

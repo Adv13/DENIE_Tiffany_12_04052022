@@ -24,7 +24,3 @@
     
   }
 
-  console.log('Données de  GET API LIST:', getApiList);
-  console.log('Données de  GET API ACTIVITY:', getApiActivity);
-  console.log('Données de  GET API DURATION:', getApiDuration);
-  console.log('Données de  GET API RADAR:', getApiRadar);
