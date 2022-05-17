@@ -24,8 +24,7 @@ Here is a new version of the dashboard page. This brand new page will allow the 
 NodeJS (version 12.18.3) and
 Yarn
 
-In order to switch easilly between node versions, you can use [NVM](https://github.com/nvm-sh/nvm)
-NVM for Windows if needed : https://github.com/coreybutler/nvm-windows
+In order to switch easilly between node versions, you can use [NVM](https://github.com/nvm-sh/nvm) or [NVM for Windows](https://github.com/coreybutler/nvm-windows) (if needed) 
 
 - Fork this repository : https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard.git
 - Clone it on your computer.
