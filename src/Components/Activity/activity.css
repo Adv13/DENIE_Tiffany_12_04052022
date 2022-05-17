@@ -1,0 +1,32 @@
+.activity {
+    background-color: #e5e5e56b;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+.activity--graph {
+    width: 100%;
+}
+  
+.activity--top {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+h2 {
+    color: #20253a;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.legend {
+    color: #74798c;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+img {
+    margin-left: 10px;
+}

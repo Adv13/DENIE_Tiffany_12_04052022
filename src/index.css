@@ -1,6 +1,16 @@
+/* COMPONENT PART */
 @import './Components/Error/error.css';
 @import './Components/Footer/footer.css';
 @import './Components/Header/header.css';
+@import './Components/Activity/activity.css';
+@import './Components/Duration/duration.css';
+@import './Components/Hello/hello.css';
+@import './Components/Infos/infos.css';
+@import './Components/Radar/radar.css';
+@import './Components/Score/score.css';
+@import './Components/WorkInProgress/workInProgress.css';
+
+/* PAGES PART */
 @import './Pages/Home/home.css';
 @import './Pages/Settings/settings.css';
 @import './Pages/Community/community.css';
