@@ -6,10 +6,11 @@ import { useLocation } from "react-router-dom";
 function Header() {
   return (
     <header className="header">
-      <div className="logo">
+      <div className="row align-items-center justify-content-between pt-3">
+      <div className="logo col-2 ps-5">
         <img src={Logo} alt="logo"></img>
       </div>
-      <nav className="links">
+      <nav className="links col-8 d-flex flex-row justify-content-around">
         {useLocation().pathname === "/" ? (
           <Link className="homeLink active" to="/">
             Accueil
@@ -19,12 +20,12 @@ function Header() {
             Accueil
           </Link>
         )}
-        {useLocation().pathname === "/dashboard" ? (
-          <Link className="dashboardLink active" to="/dashboard">
+        {useLocation().pathname === "/dashboard/:id" ? (
+          <Link className="dashboardLink active" to="/dashboard/:id">
             Profil
           </Link>
         ) : (
-          <Link className="dashboardLink" to="/dashboard">
+          <Link className="dashboardLink" to="/dashboard/:id">
             Profil
           </Link>
         )}
@@ -47,6 +48,7 @@ function Header() {
           </Link>
         )}
       </nav>
+      </div>
     </header>
   );
 }

@@ -6,11 +6,23 @@ header {
     .logo {
       height: 100%;
       width: 20%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       img {
         height: 60px;
+      }
+    }
+    .links{
+      a {
+        font-size: 24px;
+        text-decoration: none;
+        color: #FFF;
+        font-weight:lighter;
+        &:hover {
+          color:$primary;
+        }
+      }
+      .active {
+        color:$primary;
+        font-weight:bold;
       }
     }
   }

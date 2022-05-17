@@ -1,21 +1,45 @@
-h1,
-h2 {
-    text-align: justify;
-    margin-left: 100px;
-    margin-top: 0px;
-    padding-top: 50px;
-}
-
-h1 {
-    font-weight: bold;
-}
-
-strong {
-    color: #FF0000
-}
-
-h2 {
-    font-weight: lighter;
-    padding-top: 20px;
-    font-size: 1em;
-}
+body {
+    background-color: $background;
+  
+    .main {
+      margin: 60px 60px 60px 160px;
+  
+      .user {
+        margin-bottom: 60px;
+        .username {
+          color: $primary;
+        }
+        h1 {
+          font-size: 48px;
+          font-weight: 500;
+        }
+        p {
+          margin-top: 10px;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+      .content {
+        display: flex;
+        justify-content: space-between;
+        .graphs {
+          width: 75%;
+  
+          &--bottom {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 1250px) {
+    body {
+      .main {
+        margin: 30px 20px 30px 120px;
+      }
+    }
+  }
+  
