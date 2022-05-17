@@ -1,84 +1,64 @@
-import {
-    LineChart,
-    ResponsiveContainer,
-    Legend, Tooltip,
-    Line,
-    XAxis,
-    YAxis,
-    CartesianGrid
-} from 'recharts';
-import { getActivity, getDuration, getList, getRadar } from '../../API/mockServices';
-import { getApiActivity, getApiDuration, getApiList, getApiRadar } from '../../API/services';
+import { getList } from "../../API/mockServices";
+import { getApiList } from "../../API/services";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import Header from "../../Components/Header/header";
+import Footer from "../../Components/Footer/footer";
+import Hello from "../../Components/Hello/hello";
+import Info from "../../Components/Infos/infos";
+import Activity from "../../Components/Activity/activity";
+import Duration from "../../Components/Duration/duration";
+import RadarComponent from "../../Components/Radar/radar";
+import Score from "../../Components/Score/score";
 
-// Sample chart data
-const pdata = [
-    {
-        name: 'MongoDb',
-        student: 11,
-        fees: 120
-    },
-    {
-        name: 'Javascript',
-        student: 15,
-        fees: 12
-    },
-    {
-        name: 'PHP',
-        student: 5,
-        fees: 10
-    },
-    {
-        name: 'Java',
-        student: 10,
-        fees: 5
-    },
-    {
-        name: 'C#',
-        student: 9,
-        fees: 4
-    },
-    {
-        name: 'C++',
-        student: 10,
-        fees: 8
-    },
-];
+function Dashboard() {
+  const { id } = useParams();
+  const [data, setData] = useState(null);
 
+  useEffect(() => {
 
+    getApiList(id).then((items) => {
+      setData(items.data);
+    });
+  }, [id]);
 
-function Dashboard(){
-    console.log('Données de  GET API LIST:', getApiList);
-    console.log('Données de  GET API ACTIVITY:', getApiActivity);
-    console.log('Données de  GET API DURATION:', getApiDuration);
-    console.log('Données de  GET API RADAR:', getApiRadar);
-    console.log('Données de  GETLIST:', getList);
-    console.log('Données de  GETACTIVITY:', getActivity);
-    console.log('Données de  GETDURATION:', getDuration);
-    console.log('Données de  GETRADAR:', getRadar);
-
-    return(<section>
-        <h1>Bonjour <strong>Thomas</strong></h1>
-        <h2>Félicitation ! Vous avez explosé vos objectifs hier 👏</h2>
-        <>
-            <h1 className="text-heading">
-                Line Chart Using Rechart
-            </h1>
-            <ResponsiveContainer width="100%" aspect={3}>
-                <LineChart data={pdata} margin={{ right: 300 }}>
-                    <CartesianGrid />
-                    <XAxis dataKey="name" 
-                        interval={'preserveStartEnd'} />
-                    <YAxis></YAxis>
-                    <Legend />
-                    <Tooltip />
-                    <Line dataKey="student"
-                        stroke="black" activeDot={{ r: 8 }} />
-                    <Line dataKey="fees"
-                        stroke="red" activeDot={{ r: 8 }} />
-                </LineChart>
-            </ResponsiveContainer>
-        </>
-        </section>)
+  return data ? (
+    <div className="wrapper">
+      <section className="main">
+        <Hello username={data.userInfos.firstName} />
+        <div className="content">
+          <div className="graphs">
+            <Activity />
+            <div className="graphs--bottom">
+              <Duration />
+              <RadarComponent />
+              <Score />
+            </div>
+          </div>
+          <Info
+            cal={data.keyData.calorieCount}
+            prot={data.keyData.proteinCount}
+            glu={data.keyData.carbohydrateCount}
+            lip={data.keyData.lipidCount}
+          />
+        </div>
+      </section>
+    </div>
+  ) : (
+    <div className="container">
+      <div className="loading">
+        <div className="loading__letter">L</div>
+        <div className="loading__letter">o</div>
+        <div className="loading__letter">a</div>
+        <div className="loading__letter">d</div>
+        <div className="loading__letter">i</div>
+        <div className="loading__letter">n</div>
+        <div className="loading__letter">g</div>
+        <div className="loading__letter">.</div>
+        <div className="loading__letter">.</div>
+        <div className="loading__letter">.</div>
+      </div>
+    </div>
+  );
 }
-
 export default Dashboard;

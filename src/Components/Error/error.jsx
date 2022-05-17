@@ -7,7 +7,7 @@ function Error(){
     <h2>Oups! La page que vous demandez n'existe pas</h2>
     <div className="err-back">
       <Link className="backlink" to="/">
-        Retourner sur votre page de profil
+        Retourner sur la page d'accueil
       </Link>
     </div>
   </div>
