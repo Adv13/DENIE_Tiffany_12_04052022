@@ -15,7 +15,7 @@ Here is a new version of the dashboard page. This brand new page will allow the 
 - Recharts library
 
 ## How to launch the project locally
-- Copy the repository : git clone https://github.com/LoisCoulon/P12-front.git
+- Copy the repository : git clone https://github.com/Adv13/DENIE_Tiffany_12_04052022
 - Install the dependencies : yarn install / npm install
 - run the app : yarn start / npm start
 
