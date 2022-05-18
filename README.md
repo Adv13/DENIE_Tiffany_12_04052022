@@ -1,5 +1,4 @@
-[[![forthebadge]([./src/assets/made-with-create-react-app.svg](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB))](https://create-react-app.dev/)]
-[![forthebadge](./src/assets/uses-scss.svg)](https://sass-lang.com/documentation/syntax)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 # SportSee (P12 : Développez un tableau de bord d'analytics avec React)
