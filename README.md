@@ -1,4 +1,4 @@
-[![forthebadge](./src/assets/made-with-create-react-app.svg)](https://create-react-app.dev/)
+[[![forthebadge](./src/assets/made-with-create-react-app.svg)](https://create-react-app.dev/)](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 [![forthebadge](./src/assets/uses-scss.svg)](https://sass-lang.com/documentation/syntax)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
