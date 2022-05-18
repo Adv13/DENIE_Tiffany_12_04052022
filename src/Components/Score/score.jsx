@@ -18,6 +18,12 @@ import {
   
     const score = data.map((d) => d.uv);
   
+  /**
+   * This function calculates the end angle of the radial bar.
+   * @param {number} score Score of the user.
+   * @returns the end angle
+   */
+
     function calculateAngle(score) {
       const angle = 180 - 3.6 * score;
   

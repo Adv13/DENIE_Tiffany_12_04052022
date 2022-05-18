@@ -33,12 +33,20 @@ function Activity() {
     });
   }, [id]);
 
-
+  /**
+   * Gives the number of the day
+   * @param {number} num
+   * @returns The number of the day
+   */
   function weekDays(num) {
     const week = [1, 2, 3, 4, 5, 6, 7];
     return week[num];
   }
 
+   /**
+   * This function gives a customized style for its content,
+   * which is the values of the data with their units.
+   */
   function customTooltip({ active, payload }) {
     if (active && payload && payload.length) {
       return (
