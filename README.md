@@ -1,6 +1,6 @@
 [![forthebadge](./src/assets/made-with-create-react-app.svg)](https://create-react-app.dev/)
 [![forthebadge](./src/assets/uses-scss.svg)](https://sass-lang.com/documentation/syntax)
-[![forthebadge](./src/assets/and-recharts.svg)](https://recharts.org/)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 # SportSee (P12 : Développez un tableau de bord d'analytics avec React)
 ![SportSeeLogo](./src/assets/logo.png)
