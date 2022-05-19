@@ -17,6 +17,11 @@ function RadarComponent() {
 
   useEffect(() => {
 
+   /**
+   * This function takes the information under "kind" category in the dataset,
+   * in order to create the radar chart with the kind informations and its values.
+   */
+
     getApiRadar(id).then((items) => {
       if (items.data) {
         const formattedData = items.data.data.map((rd) => ({
@@ -26,7 +31,7 @@ function RadarComponent() {
         setRadarData(formattedData);
       }
     });
-  }, [id]);
+  }, [id]);// charger les données sur la page selon l'id d'un profil via le tableau
 
   return radarData.length > 0 ? (
     <div className="radar">

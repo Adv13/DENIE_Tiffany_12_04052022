@@ -20,6 +20,10 @@ function Activity() {
 
   useEffect(() => {
 
+   /**
+   * This function takes the data linked to the ID concerned,
+   * and return the data "day", "kilogram" and "calories" under the sessions category.
+   */  
     getApiActivity(id).then((datas) => {
       if (datas.data) {
         const formattedData = datas.data.sessions.map((activity) => ({
