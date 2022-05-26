@@ -2,16 +2,13 @@
  * @jest-environment jsdom
  */
 
-import { fireEvent, render } from '@testing-library/react';
+import '@testing-library/jest-dom'
+import {render, screen } from '@testing-library/react';
 import React from 'react';
 import { Router } from 'react-router-dom';
-import ButtonLogin from './ButtonLogin';
 import { createMemoryHistory } from 'history';
-
-const { render } = require("@testing-library/react");
-const { createMemoryHistory } = require("history");
-const React = require("react");
-const { Router } = require("react-router-dom");
+import userEvent from '@testing-library/user-event'
+import {App, LocationDisplay} from './app'
 
 test('use jsdom in this test file', () => {
   const element = document.createElement('div');
@@ -28,16 +25,65 @@ it("works", () => {
 
 
 
-describe('ButtonLogin', () => {
-  test('should pass', () => {
-    const history = createMemoryHistory({ initialEntries: ['/home'] });
-    const { getByText } = render(
-      <Router history={history}>
-        <ButtonLogin />
-      </Router>
-    );
-    expect(history.location.pathname).toBe('/home');
-    fireEvent.click(getByText('Iniciar sesión'));
-    expect(history.location.pathname).toBe('/login');
-  });
-});
+///////////////////////////////////////////////////////////////////
+
+// test('When I click on Profil 12, I expect this profile to be loaded.', async () => {
+//   const history = createMemoryHistory()
+//   render(
+//     <Router location={history.location} navigator={history}>
+//       <App />
+//     </Router>,
+//   )
+//   const user = userEvent.setup()
+//   // verify page content for expected route
+//   // often you'd use a data-testid or role query, but this is also possible
+//   expect(screen.getByText(/Go to user/i)).toBeInTheDocument()
+
+//   await user.click(screen.getByText(/Profil 12/i))
+
+//   // check that the content changed to the new page
+//   expect(screen.getByText(/Bonjour Karl/i)).toBeInTheDocument()
+// })
+
+// test('When I click on Profil 18, I expect this profile to be loaded.', async () => {
+//   const history = createMemoryHistory()
+//   render(
+//     <Router location={history.location} navigator={history}>
+//       <App />
+//     </Router>,
+//   )
+//   const user = userEvent.setup()
+//   // verify page content for expected route
+//   // often you'd use a data-testid or role query, but this is also possible
+//   expect(screen.getByText(/Go to user/i)).toBeInTheDocument()
+
+//   await user.click(screen.getByText(/Profil 18/i))
+
+//   // check that the content changed to the new page
+//   expect(screen.getByText(/Bonjour Cecilia/i)).toBeInTheDocument()
+// })
+
+// test('Landing on a bad page', () => {
+//   const history = createMemoryHistory()
+//   history.push('/some/bad/route')
+//   render(
+//     <Router location={history.location} navigator={history}>
+//       <App />
+//     </Router>,
+//   )
+
+//   expect(screen.getByText(/404/i)).toBeInTheDocument()
+// })
+
+// test('Rendering a component that uses useLocation', () => {
+//   const history = createMemoryHistory()
+//   const route = '/dashboard/18'
+//   history.push(route)
+//   render(
+//     <Router location={history.location} navigator={history}>
+//       <LocationDisplay />
+//     </Router>,
+//   )
+
+//   expect(screen.getByTestId('location-display')).toHaveTextContent(route)
+// })

@@ -17,7 +17,7 @@ function Footer(){
             <button className="btn btn-sm btn-outline-secondary bg-light" type="button">
                 <img className="p-2" src={BikeIcon} alt="Bike Icon"></img>
             </button>
-            <button className="btn btn-sm btn-outline-secondary bg-light" type="button">
+            <button className="btn btn-sm btn-outline-secondary bg-light mb-5" type="button">
                 <img  className="p-2"src={TrainingIcon} alt="Training Icon"></img>
             </button>
         </form>

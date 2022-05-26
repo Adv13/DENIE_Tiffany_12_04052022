@@ -1,9 +1,7 @@
-import { getList } from "../../API/mockServices";
+//import { getList } from "../../API/mockServices";
 import { getApiList } from "../../API/services";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Header from "../../Components/Header/header";
-import Footer from "../../Components/Footer/footer";
 import Hello from "../../Components/Hello/hello";
 import Info from "../../Components/Infos/infos";
 import Activity from "../../Components/Activity/activity";

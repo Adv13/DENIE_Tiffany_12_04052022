@@ -1,4 +1,4 @@
-import { getRadar } from "../../API/mockServices";
+//import { getRadar } from "../../API/mockServices";
 import { getApiRadar } from "../../API/services";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";

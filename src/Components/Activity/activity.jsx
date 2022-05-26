@@ -1,4 +1,4 @@
-import { getActivity } from "../../API/mockServices";
+//import { getActivity } from "../../API/mockServices";
 import { getApiActivity } from "../../API/services";
 import oval from "../../assets/Oval.png";
 import ovalRed from "../../assets/Oval_red.png";
