@@ -1,35 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./main.scss";
+import "./styles/main.css";
 import reportWebVitals from './reportWebVitals';
-import Header from './Components/Header/header'
-import Footer from './Components/Footer/footer'
-import Error from './Components/Error/error'
-import Dashboard from './Pages/Dashboard/dashboard'
-import Home from './Pages/Home/home'
-import Settings from './Pages/Settings/settings'
-import Community from './Pages/Community/community';
-
-
+import App from './app'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <section className="navigation">
-        <Header />
-        <Footer />
-      </section>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/dashboard/:id" element={<Dashboard />} /> 
-        <Route path="/settings" element={<Settings />} />
-        <Route path="/community" element={<Community />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
-    </Router>
-
+    <App />
   </React.StrictMode>
 );
 

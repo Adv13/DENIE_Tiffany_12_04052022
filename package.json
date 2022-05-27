@@ -4,11 +4,9 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "bootstrap": "^5.1.3",
-    "node-sass": "^7.0.1",
     "npm": "^8.10.0",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
@@ -22,6 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "cover": "jest --coverage --noStackTrace --silent",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.18.2",
+    "@testing-library/react": "^13.2.0"
   }
 }

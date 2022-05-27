@@ -1,4 +1,4 @@
-import { getDuration } from "../../API/mockServices";
+//import { getDuration } from "../../API/mockServices";
 import { getApiDuration } from "../../API/services";
 import { useEffect, useState } from "react";
 import {
