@@ -22,20 +22,20 @@ function Header() {
         )}
         {useLocation().pathname === "/dashboard/12" ? (
           <Link className="dashboardLink active" to="/dashboard/12">
-            Profil 12
+            Profil
           </Link>
         ) : (
           <Link className="dashboardLink" to="/dashboard/12">
-            Profil 12
+            Profil
           </Link>
         )}
-        {useLocation().pathname === "/dashboard/18" ? (
-          <Link className="settings active" to="/dashboard/18">
-            Profil 18
+        {useLocation().pathname === "/settings" ? (
+          <Link className="settings active" to="/settings">
+            Réglgages
           </Link>
         ) : (
-          <Link className="settings" to="/dashboard/18">
-            Profil 18
+          <Link className="settings" to="/settings">
+            Réglages
           </Link>
         )}
         {useLocation().pathname === "/community" ? (
