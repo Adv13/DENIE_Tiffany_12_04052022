@@ -5,7 +5,7 @@ import Footer from './Components/Footer/footer'
 import Error from './Components/Error/error'
 import Dashboard from './Pages/Dashboard/dashboard'
 import Home from './Pages/Home/home'
-import Community from './Pages/Community/community';
+import Community from './Pages/Community/community';///
 
 function App(){
 return(
