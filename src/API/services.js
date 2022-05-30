@@ -1,13 +1,10 @@
 
-
-
- 
  export function getApiList(userId) {
     const baseUrl = `http://localhost:3000/user/${userId}`;
   
     return fetch(baseUrl).then((data) => data.json())
     .catch(function(error){
-      setTimeout(function() { alert("Connexion impossible. Veuillez retourner sur l'accueil.", error.message); }, 5000);
+      console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
     });
   }
   

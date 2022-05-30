@@ -8,6 +8,7 @@ import Activity from "../../Components/Activity/activity";
 import Duration from "../../Components/Duration/duration";
 import RadarComponent from "../../Components/Radar/radar";
 import Score from "../../Components/Score/score";
+import Error from "../../Components/Error/error";
 
 function Dashboard() {
   const { id } = useParams();
@@ -42,13 +43,9 @@ function Dashboard() {
         </div>
       </section>
     </div>
-  ) : (
-    <div className="container">
-      <div className="loading">
-        <div className="loading__letter">.</div>
-        <div className="loading__letter">.</div>
-        <div className="loading__letter">.</div>
-      </div>
+  ) : ( 
+    <div className="container d-flex justify-content-center ms-5 ps-5">
+      <Error />
     </div>
   );
 }

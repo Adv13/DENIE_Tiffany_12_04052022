@@ -3,10 +3,11 @@
  * @returns mocked data.json
  */
 
- function message(){
+ /*function message(){
   // eslint-disable-next-line no-undef
   timeoutId = setTimeout(alert, 5000, 'Message d\'alerte après 5 secondes. Connexion impossible.'); 
-}
+}*/
+import Error from "../Components/Error/error";
 
  export function getList() {
     const baseUrl = "../mocked/mainData.json";
@@ -14,7 +15,8 @@
     return fetch(baseUrl).then((data) => data.json()).catch(function(error){
       console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
       
-      clearTimeout(message);
+      clearTimeout();
+      return <Error />
     });
   }
   
@@ -23,7 +25,8 @@
   
     return fetch(baseUrl).then((data) => data.json()).catch(function(error){
       console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
-      clearTimeout(message);
+      clearTimeout();
+      return <Error />
     });
   }
   
@@ -32,7 +35,8 @@
   
     return fetch(baseUrl).then((data) => data.json()).catch(function(error){
       console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
-      clearTimeout(message);
+      clearTimeout();
+      return <Error />
     });
   }
   
@@ -41,7 +45,8 @@
   
     return fetch(baseUrl).then((data) => data.json()).catch(function(error){
       console.log('Il y a eu un problème avec l\'opération fetch: ' + error.message);
-      clearTimeout(message);
+      clearTimeout();
+      return <Error />
     });
   }
   
