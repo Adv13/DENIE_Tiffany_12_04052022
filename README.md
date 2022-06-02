@@ -21,7 +21,7 @@ Here is a new version of the dashboard page. This brand new page will allow the 
 
 ## Using the Api
 - Prerequisites : 
-NodeJS (version 12.18.3) and
+NodeJS (version 12.18 minimum) and
 Yarn
 
 In order to switch easilly between node versions, you can use [NVM](https://github.com/nvm-sh/nvm) or [NVM for Windows](https://github.com/coreybutler/nvm-windows) (if needed) 
