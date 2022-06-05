@@ -6,7 +6,7 @@
 ![SportSeeLogo](./src/assets/logo.png)
 
 ## Presentation
-SportSee is a startup dedicated to sports coaching. 
+SportSee is a startup dedicated to sport coaching. 
 Here is a new version of the dashboard page. This brand new page will allow the user to follow the number of sessions carried out as well as the number of burned calories.
 
 ## Technologies
