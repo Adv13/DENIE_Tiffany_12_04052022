@@ -16,6 +16,7 @@ Here is a new version of the dashboard page. This brand new page will allow the 
 
 ## How to launch the project locally
 - Copy the repository : git clone https://github.com/Adv13/DENIE_Tiffany_12_04052022
+- Install sass (globally : npm i -g sass OR locally : npm i sass --save-dev)
 - Install the dependencies : yarn install / npm install
 - run the app : yarn start / npm start
 
