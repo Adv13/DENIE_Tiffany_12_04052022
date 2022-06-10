@@ -15,7 +15,14 @@ function Dashboard() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
+    /** Using Mocked datas*/
 
+    // getList().then((items) => {
+    //   let datas = items.find((item) => item.id === parseFloat(id));
+    //   setData(datas);
+    // });
+
+    /**Using API datas*/
     getApiList(id).then((items) => {
       setData(items.data);
     });
