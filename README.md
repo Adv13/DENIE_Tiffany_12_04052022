@@ -13,6 +13,7 @@ Here is a new version of the dashboard page. This brand new page will allow the 
 - React intalled with create-react-app
 - Javascript
 - Recharts library
+- Sass/Bootstrap
 
 ## How to launch the project locally
 - Copy the repository : git clone https://github.com/Adv13/DENIE_Tiffany_12_04052022
