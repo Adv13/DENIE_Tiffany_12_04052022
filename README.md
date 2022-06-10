@@ -34,7 +34,7 @@ In order to switch easilly between node versions, you can use [NVM](https://gith
 - The yarn dev command will allow you to run the micro API.
 
 ## Using the mocked datas
-Get to the following files : Dashboard.js, Activity.js, Duration.js, RadarComponent.js
+Get to the following files : Dashboard.js (for example).
 Uncomment the function under this comment /** Using Mocked datas*/ and comment the function under /**Using API datas*/
 
 
