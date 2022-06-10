@@ -12,12 +12,24 @@ import {
 } from "recharts";
 import { useParams } from "react-router-dom";
 
+/**
+* This function returns the graphic linked to the duration of the weekly activity of the profile concerned,
+* if the porfile exists in the database.
+*/
 function Duration() {
   const [durationData, setDurationData] = useState([]);
   const { id } = useParams();
 
+  /**
+  * This hook allows the trigger of a function in a asynchronous way,
+  * if there is any change in the state of the component.
+  */
   useEffect(() => {
 
+    /**
+    * This function gives the duration data from the API/mockedServices,
+    * which is essential in order to show the line chart used for the duration data.
+    */
     getApiDuration(id).then((datas) => {
       if (datas.data) {
         const formattedData = datas.data.sessions.map((activity) => ({

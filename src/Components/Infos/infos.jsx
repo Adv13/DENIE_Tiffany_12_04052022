@@ -4,6 +4,10 @@ import chicken from "../../assets/chicken.png";
 import energy from "../../assets/energy.png";
 import PropTypes from "prop-types";
 
+/**
+* This function contains the Info part that is shown on the right of the screen on this website,
+* in order to give information about calories, proteins, carbohydrates and lipids lost.
+*/
 function Info({ cal, prot, glu, lip }) {
   return (
     <div className="infos">

@@ -1,5 +1,8 @@
 import PropTypes from "prop-types";
 
+/**
+* This function contains the Hello part that display the Welcome sentence with the first name of the profile concerned.
+*/
 function Hello({ username }) {
   return (
     <div className="user">

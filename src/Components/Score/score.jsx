@@ -6,6 +6,10 @@ import {
     Tooltip,
   } from "recharts";
   
+  /**
+  * This function returns the score of the goal of the profile concerned,
+  * if the porfile exists in the database.
+  */
   function Score() {
     const data = [
       {

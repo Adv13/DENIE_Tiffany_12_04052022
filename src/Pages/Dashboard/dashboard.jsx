@@ -10,18 +10,31 @@ import RadarComponent from "../../Components/Radar/radar";
 import Score from "../../Components/Score/score";
 import Error from "../../Components/Error/error";
 
+/**
+* This function returns the content of the Dashboard page.
+*/
 function Dashboard() {
   const { id } = useParams();
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    /** Using Mocked datas*/
+    /**
+    * This function gives the data from the mockServices js file,
+    * which is essential in order to show the profile/dashboard page.
+    */
 
+    /** Using Mocked datas*/
     // getList().then((items) => {
     //   let datas = items.find((item) => item.id === parseFloat(id));
     //   setData(datas);
     // });
 
+
+    /**
+    * This function gives the data from the API given,
+    * which is essential in order to show the profile/dashboard page.
+    */
+   
     /**Using API datas*/
     getApiList(id).then((items) => {
       setData(items.data);

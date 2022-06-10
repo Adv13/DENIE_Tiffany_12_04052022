@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 import Logo from '../../assets/logo.png'
 import { useLocation } from "react-router-dom";
 
-
+/**
+* This function contains the Header part that is shown on the top of the screen on this website,
+* and allow us to navigate between the different pages.
+*/
 function Header() {
   return (
     <header className="header">

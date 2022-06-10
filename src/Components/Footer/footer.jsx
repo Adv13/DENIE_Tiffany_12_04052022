@@ -4,6 +4,10 @@ import BikeIcon from '../../assets/BikeIcon.png'
 import TrainingIcon from '../../assets/TrainingIcon.png'
 import Copyright from '../../assets/Copyright2020.png'
 
+/**
+* This function contains the Footer part that is shown on the left of the screen on this website,
+* and allow us to navigate between different activities.
+*/
 function Footer(){
     return(
     <footer>

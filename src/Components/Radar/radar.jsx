@@ -11,17 +11,25 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+/**
+* This function returns the radar chart of the type of activity of the profile concerned,
+* if the porfile exists in the database.
+*/
 function RadarComponent() {
   const [radarData, setRadarData] = useState([]);
   const { id } = useParams();
 
+
+  /**
+  * This hook allows the trigger of a function in a asynchronous way,
+  * if there is any change in the state of the component.
+  */
   useEffect(() => {
 
    /**
    * This function takes the information under "kind" category in the dataset,
    * in order to create the radar chart with the kind informations and its values.
    */
-
     getApiRadar(id).then((items) => {
       if (items.data) {
         const formattedData = items.data.data.map((rd) => ({
@@ -31,7 +39,7 @@ function RadarComponent() {
         setRadarData(formattedData);
       }
     });
-  }, [id]);// charger les données sur la page selon l'id d'un profil via le tableau
+  }, [id]);
 
   return radarData.length > 0 ? (
     <div className="radar">

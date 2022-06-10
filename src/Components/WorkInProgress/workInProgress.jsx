@@ -1,3 +1,6 @@
+/**
+* This function contains the workInProgress part shown when a page isn't ready.
+*/
 function WorkInProgress(){
     return(
     <div className="wrapper" id="workInProgress">

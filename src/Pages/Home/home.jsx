@@ -1,5 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
+/**
+* This function returns the content of the Home page.
+*/
 function Home(){
     return(
         <main>

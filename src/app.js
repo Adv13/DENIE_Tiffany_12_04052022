@@ -7,6 +7,9 @@ import Dashboard from './Pages/Dashboard/dashboard'
 import Home from './Pages/Home/home'
 import Community from './Pages/Community/community';
 
+/**
+* This function contains the routing part of the website for the navigation.
+*/
 function App(){
 return(
   <Router>

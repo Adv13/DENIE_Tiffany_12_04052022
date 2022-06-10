@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 
+/**
+* This function contains the Error component that is shown when the URL asked doesn't exist.
+*/
 function Error(){
     return(
     <div className="wrapper d-flex flex-column align-items-center">

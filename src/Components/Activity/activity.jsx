@@ -14,10 +14,18 @@ import {
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+/**
+* This function returns the graphic linked to the weekly activity of the profile concerned,
+* if the porfile exists in the database.
+*/
 function Activity() {
   const [activityData, setActivityData] = useState([]);
   const { id } = useParams();
 
+  /**
+  * This hook allows the trigger of a function in a asynchronous way,
+  * if there is any change in the state of the component.
+  */
   useEffect(() => {
 
    /**
